@@ -16,10 +16,10 @@ services:
     env_file: .env
     image: paulsparrow/kittygram_backend
     volumes:
-      - static:/backend_static
+      - static:/static
       - media:/app/media
     depends_on:
-    - db
+      - db
 
   frontend:
     env_file: .env
