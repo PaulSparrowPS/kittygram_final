@@ -29,7 +29,6 @@ services:
       - static:/static
   
   gateway:
-    container_name: kittygram_gateway
     env_file: .env
     image: paulsparrow/kittygram_gateway
     volumes:
